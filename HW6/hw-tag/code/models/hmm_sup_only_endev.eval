@@ -1,0 +1,4 @@
+Wrote tagging to results/2e_sup_only.output
+Cross-entropy: 10.8059 nats (= perplexity 49308.774)
+Tagging accuracy: all: 90.455%, known: 96.786%, seen: nan%, novel: 24.858%
+===

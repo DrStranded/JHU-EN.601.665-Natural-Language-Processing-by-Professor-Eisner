@@ -1,0 +1,24 @@
+=== CRF Semi-supervised Hyperparameter Results ===
+
+LR=0.01, REG=1.0:
+Tagging accuracy: all: 82.926%, known: 84.726%, seen: 63.131%, novel: 64.729%
+
+LR=0.05, REG=0.5:
+Tagging accuracy: all: 88.939%, known: 91.264%, seen: 63.131%, novel: 65.522%
+
+LR=0.05, REG=1.0:
+Tagging accuracy: all: 88.714%, known: 91.026%, seen: 63.131%, novel: 65.390%
+
+LR=0.05, REG=2.0:
+Tagging accuracy: all: 88.263%, known: 90.532%, seen: 63.131%, novel: 65.390%
+
+LR=0.1, REG=1.0:
+Tagging accuracy: all: 90.797%, known: 93.315%, seen: 62.963%, novel: 65.390%
+
+
+=== Comparison: CRF Supervised vs Semi-supervised ===
+
+Best Supervised:
+Tagging accuracy: all: 90.171%, known: 92.601%, seen: nan%, novel: 64.991%
+
+Best Semi-supervised:

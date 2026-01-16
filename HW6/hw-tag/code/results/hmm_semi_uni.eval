@@ -1,0 +1,9 @@
+Tagging accuracy: all: 16.226%, known: 13.209%, seen: 23.737%, novel: 56.803%
+Tagging accuracy: all: 91.808%, known: 96.072%, seen: 24.242%, novel: 56.803%
+Total training time: 0:00:34
+---
+Wrote tagging to results/hmm_semi_uni.output
+Tagging accuracy: all: 91.808%, known: 96.072%, seen: 24.242%, novel: 56.803%
+Cross-entropy: 10.6127 nats (= perplexity 40647.354)
+===
+
