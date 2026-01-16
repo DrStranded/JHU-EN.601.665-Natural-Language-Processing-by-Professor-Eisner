@@ -1,0 +1,11 @@
+Cross-entropy: 3.1275 nats (= perplexity 22.816)
+Cross-entropy: 1.9067 nats (= perplexity 6.731)
+Cross-entropy: 1.2940 nats (= perplexity 3.647)
+Cross-entropy: 0.7151 nats (= perplexity 2.044)
+Cross-entropy: 0.5522 nats (= perplexity 1.737)
+Total training time: 0:02:01
+---
+Wrote tagging to en_problex_fixed_endev.output
+Cross-entropy: 0.5522 nats (= perplexity 1.737)
+Tagging accuracy: all: 84.070%, known: 89.657%, seen: nan%, novel: 26.186%
+===

@@ -1,0 +1,20 @@
+(ROOT (S (NP (Det all) (N caviar)) (VP (V is) (Adj delicious))) .)
+24.119023817703294
+(ROOT (S (NP (Det some) (N caviar)) (VP (V is) (Adj delicious))) .)
+23.534061316982136
+(ROOT (S (NP (Det the) (N caviar)) (VP (V is) (Adj delicious))) .)
+23.534061316982136
+(ROOT (S (NP Papa) (VP (V (V eat) -ed) (NP (Det some) (N caviar)))) .)
+27.517060995399145
+(ROOT (S (NP Papa) (VP (V (V eat) -ed) (NP (Det the) (N caviar)))) .)
+27.517060995399145
+(ROOT (S (NP (Det two) (N caviar)) (VP (V is) (Adj delicious))) .)
+25.119023817703294
+(ROOT (S (NP (Det a) (N caviar)) (VP (V is) (Adj delicious))) .)
+25.119023817703294
+(ROOT (S (NP (Det every) (N caviar)) (VP (V is) (Adj delicious))) .)
+25.119023817703294
+(ROOT (S (NP Papa) (VP (V (V eat) -ed) (NP (Det two) (N caviar)))) .)
+29.1020234961203
+(ROOT (S (NP Papa) (VP (V (V eat) -ed) (NP (Det a) (N caviar)))) .)
+29.1020234961203

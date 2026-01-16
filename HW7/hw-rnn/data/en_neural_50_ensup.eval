@@ -1,0 +1,12 @@
+Cross-entropy: 3.1252 nats (= perplexity 22.765)
+Cross-entropy: 0.1629 nats (= perplexity 1.177)
+Cross-entropy: 0.1086 nats (= perplexity 1.115)
+Cross-entropy: 0.0899 nats (= perplexity 1.094)
+Cross-entropy: 0.0847 nats (= perplexity 1.088)
+Cross-entropy: 0.0825 nats (= perplexity 1.086)
+Total training time: 0:11:42
+---
+Wrote tagging to en_neural_50_ensup.output
+Cross-entropy: 0.0825 nats (= perplexity 1.086)
+Tagging accuracy: all: 97.332%, known: 97.332%, seen: nan%, novel: nan%
+===

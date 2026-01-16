@@ -1,0 +1,4 @@
+Wrote tagging to en_d50_finetune_ensup.output
+Cross-entropy: 0.0884 nats (= perplexity 1.092)
+Tagging accuracy: all: 97.276%, known: 97.276%, seen: nan%, novel: nan%
+===

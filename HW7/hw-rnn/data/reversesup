@@ -1,0 +1,500 @@
+b/D a/B a/B b/B b/A b/A d/EOS
+c/B b/B d/D b/B b/EOS
+d/B d/C c/A a/C c/D b/EOS
+c/A a/A d/D d/D a/B b/A d/D d/D a/A a/EOS
+b/B c/B b/B b/C b/EOS
+a/B d/C c/D b/EOS
+c/C b/D a/D d/A d/B c/EOS
+d/D d/C b/B c/D d/EOS
+c/A d/A b/D d/C b/A a/C c/A a/B c/D d/B a/D a/EOS
+d/D c/C c/A d/C a/A b/B a/A c/D a/C c/C d/EOS
+c/C b/D a/C d/D b/B d/D b/B d/D c/A d/B c/EOS
+d/C b/C b/D b/B d/B c/B c/EOS
+c/B b/A a/A a/A a/C a/A c/A a/A a/A a/B b/EOS
+d/D d/C a/A b/A a/D c/C d/A a/B a/A c/D d/EOS
+d/A d/D d/C c/C d/C b/B b/B c/D c/C c/D d/D a/EOS
+a/D c/C b/D c/C d/D c/C d/B c/C d/EOS
+b/D b/B b/C a/C b/B a/A b/B c/A c/B b/B d/EOS
+a/B d/B b/D a/C c/A d/B b/D b/EOS
+b/B a/B b/D b/D b/C b/B c/B d/B d/B b/A b/EOS
+c/A d/B d/D a/D d/A a/A a/D d/A d/D b/D a/EOS
+a/A a/D a/B a/C a/C d/B b/D c/A c/A b/A d/A a/EOS
+c/C a/A d/D a/A c/EOS
+b/B a/B d/A a/D a/B c/A a/C b/A d/A a/D b/A b/EOS
+a/A d/B b/D c/B b/C d/B b/D a/EOS
+b/A d/B d/C b/A b/B c/A a/C b/B a/B c/D b/D a/EOS
+c/D c/C c/C d/EOS
+d/A a/D c/B d/C d/B a/A b/D c/D b/C d/A a/EOS
+d/D a/A b/B a/A d/EOS
+a/C c/D d/C c/B a/A b/C c/D d/C c/EOS
+c/C b/D d/B b/C c/B b/D d/B c/EOS
+a/C a/B d/C c/B c/B c/A a/C b/C b/C c/D b/A c/EOS
+a/A a/C a/A c/A a/EOS
+a/B c/C c/B d/D b/D b/B d/B d/D b/C c/C b/EOS
+b/A b/C c/B a/EOS
+c/B b/B b/B b/EOS
+c/B a/C a/C c/A c/A b/EOS
+c/B c/C b/A a/D a/A d/A a/B c/C b/EOS
+b/C a/A a/C b/B c/A a/A c/EOS
+b/A b/C a/C c/A c/B a/EOS
+c/D c/D b/C d/A a/B b/D d/B b/A a/D c/B d/C d/EOS
+a/A d/A a/A d/C b/C c/B c/D a/A a/D a/EOS
+c/D d/C b/C b/D c/C b/C c/B c/C d/B c/B c/D d/EOS
+a/C a/C c/A c/EOS
+a/C a/B d/C b/D d/D d/D d/B c/D b/A c/EOS
+b/B d/B b/D d/A a/D d/B b/D b/EOS
+d/B d/B d/A b/B a/D b/D b/EOS
+a/C d/C c/D c/EOS
+a/A b/C b/C c/B a/B d/D b/A b/C c/B c/B a/EOS
+a/A b/B c/A b/B a/C b/B a/EOS
+c/A d/B b/C d/D a/D d/A d/D c/B b/D a/EOS
+d/D c/B b/C d/EOS
+d/C a/B b/B d/D b/B b/A c/EOS
+d/D b/D c/C b/B d/B c/D d/C b/D b/B c/C d/B d/EOS
+b/A a/C d/C a/B b/A c/D c/A a/EOS
+b/A d/D b/B b/B d/D a/EOS
+a/D d/A c/B c/C c/D b/B d/C c/C b/C a/D d/EOS
+d/A a/A a/D b/D d/B d/A a/A a/EOS
+c/D a/D d/A d/EOS
+c/A c/C b/B b/B c/C a/EOS
+b/D b/A c/C a/B d/EOS
+b/A a/B a/C c/C d/A d/A a/D a/D c/C c/A b/A a/EOS
+a/C c/D d/C d/B b/D c/D d/C c/EOS
+c/C a/D b/D b/B d/B d/A c/EOS
+c/D b/C c/B d/EOS
+b/A b/C c/D d/C c/B a/EOS
+b/D d/C c/D d/EOS
+d/B a/B a/B a/A b/A b/A b/EOS
+b/B c/B c/A d/A b/B c/C b/B a/D a/C b/C b/EOS
+b/A d/C b/C c/B c/D a/EOS
+c/C a/C a/B c/A c/C a/C b/A c/A c/EOS
+b/D d/B c/A d/B c/A a/C b/D a/C b/D d/EOS
+a/C a/A d/D d/D a/A c/EOS
+d/B a/A a/A b/EOS
+c/A a/D b/D a/A c/C d/D c/C a/A d/B d/A a/EOS
+b/D b/C d/C a/A c/D c/B d/EOS
+a/A a/A b/B b/C d/A d/D a/D c/B b/B a/A a/EOS
+c/A d/A a/D d/D d/A a/D a/EOS
+d/A d/B b/C c/B b/D a/EOS
+d/B a/A d/D d/D a/A b/EOS
+d/A c/B a/A b/C a/EOS
+d/C c/C d/C c/C d/D c/C c/D c/C c/EOS
+c/A b/B c/D a/A a/B d/B b/D b/A a/A d/C b/B a/EOS
+c/B c/D a/A a/A d/C b/EOS
+a/D a/D c/B d/A a/D b/C d/A d/EOS
+a/D d/A b/B d/C b/D a/A d/B c/D b/B a/D d/EOS
+c/C b/A d/A d/B b/D c/C d/B b/D a/D a/B c/EOS
+d/D b/D a/B b/A d/B d/EOS
+c/A d/B a/C c/B b/C b/C c/B c/B b/C c/A b/D a/EOS
+d/D c/B c/D d/C b/C d/EOS
+a/D c/C d/B b/B b/B b/D c/C d/EOS
+a/A c/C d/B b/C b/C d/D c/B c/B b/D c/C a/EOS
+b/D a/B a/C b/B c/A b/A d/EOS
+c/A c/D d/D c/B b/B b/C d/D d/C a/EOS
+c/B d/C c/A a/C c/D b/EOS
+d/B c/B c/C b/C b/EOS
+b/C a/A d/B c/C b/A a/B c/C b/D a/A c/EOS
+d/D d/C c/B c/A a/C c/A a/C b/C c/D d/EOS
+c/A b/C c/D d/C c/B a/EOS
+b/C b/C a/B c/B b/B b/C b/A c/B c/EOS
+d/D c/A a/A a/C d/EOS
+d/A b/D b/B d/B a/EOS
+a/D d/A c/C b/A a/D d/A a/B c/C a/D d/EOS
+d/D d/B c/C c/B b/C c/C b/D d/EOS
+a/A b/D d/B a/EOS
+c/C b/B a/A b/B c/EOS
+d/D b/D b/A b/B a/B d/B d/EOS
+b/C c/D a/B d/D c/D b/B b/B d/C d/D b/A d/C c/EOS
+b/B c/A c/C d/C d/C c/C c/D c/D c/C a/C b/EOS
+d/A c/D d/C a/EOS
+a/C d/A d/A b/B b/B a/D a/D c/EOS
+c/D b/A d/B a/D a/B a/C c/A b/A d/A b/D a/B d/EOS
+c/A a/A c/C d/B a/C c/A b/D c/C a/A a/EOS
+d/C a/A a/C a/A c/A a/A c/EOS
+a/D c/A a/C a/D c/C d/A c/A a/C d/EOS
+b/A c/B b/C a/EOS
+c/D d/C d/D b/B d/D c/D d/EOS
+b/D d/D d/D b/B b/B d/D d/D d/EOS
+c/A d/B a/A b/D a/EOS
+b/A c/B a/B d/A a/D d/D d/A a/D b/A b/C a/EOS
+b/A d/D d/B c/B b/B b/B b/C b/D d/D a/EOS
+b/C d/B d/C b/B c/D b/D c/EOS
+c/D d/A b/B a/D d/EOS
+c/D c/C b/C b/B c/D d/C b/B c/B c/C d/EOS
+b/C a/D d/A b/B a/C c/C c/A b/B a/D d/A c/EOS
+c/C c/D c/A c/B b/B a/A a/A b/B b/C a/C d/C c/EOS
+c/B a/D b/B d/A b/EOS
+c/B c/A a/C b/EOS
+b/A c/C b/A b/B b/B a/B c/C a/EOS
+b/D c/A a/C d/EOS
+d/A c/C a/A c/C a/EOS
+a/A d/D b/A b/C b/B d/D d/D b/B c/B a/B d/D a/EOS
+c/A a/A b/D d/A b/B a/D d/B a/A a/EOS
+b/B a/A a/A c/C a/A a/A b/EOS
+d/C b/D d/B a/A b/D d/B a/A b/D d/B c/EOS
+a/A c/B a/B b/A b/C c/C c/B a/B b/A b/C a/EOS
+d/C b/B c/C b/D b/A a/B d/B c/C b/B c/EOS
+d/B b/C d/C b/B d/D d/D b/B c/D c/B b/EOS
+b/C b/A c/C c/D d/B c/C b/D d/C c/C a/B c/EOS
+d/D a/D a/A d/A d/EOS
+b/A b/D a/A c/B d/D b/C a/A d/B a/EOS
+d/C d/A b/A c/B b/D b/B b/B d/B b/C a/B a/D c/EOS
+c/D b/C a/D a/D c/C d/A d/A c/B d/EOS
+d/C d/C a/C d/D b/B a/A a/A b/B d/D c/A c/D c/EOS
+b/B a/D b/A d/A b/D d/A a/D d/B a/D a/B d/A b/EOS
+c/C c/B c/C b/C c/EOS
+b/C b/C c/C d/D d/A a/D d/D c/C c/B c/EOS
+b/D b/A a/B b/A a/B d/EOS
+c/B b/D d/C b/B c/D d/B b/EOS
+a/A d/D c/D d/C d/D a/EOS
+b/D c/C b/C d/B d/D c/D d/C d/D b/D c/B c/C d/EOS
+a/D d/C a/A b/C c/B b/C c/B a/A c/D d/EOS
+d/D d/D b/C c/B d/D d/EOS
+b/A d/C d/C c/D c/D a/EOS
+c/A b/D d/D a/A b/B b/B a/A d/D d/B a/EOS
+b/D a/A d/C a/D b/C d/C c/D c/B d/A c/D a/A d/EOS
+c/B a/A d/D c/C c/D d/C c/C d/D a/A b/EOS
+b/D d/C c/B c/C b/C c/D d/EOS
+b/C b/C d/A a/A a/D c/B c/EOS
+b/B d/A c/C a/D b/EOS
+c/A a/A b/B a/D d/A a/A a/A a/D d/A b/B a/A a/EOS
+d/A b/C c/D b/A c/C a/B d/C c/B a/EOS
+d/D c/A b/D d/A c/C c/C a/D d/B a/C d/EOS
+d/A d/D c/B b/A a/B b/C d/D a/EOS
+a/D d/C d/D c/D d/EOS
+d/C a/D d/A c/EOS
+c/C a/D a/C b/A c/C a/B c/A d/A c/EOS
+a/C b/D d/B c/EOS
+b/D a/D d/A b/C c/B a/D d/A d/EOS
+d/D d/B d/C a/A c/D b/D d/EOS
+d/B c/D c/C c/C d/C b/EOS
+c/C a/A d/B b/D a/A c/EOS
+a/D b/A c/D c/C d/C a/B d/EOS
+c/A a/D d/D c/C c/A b/B a/C c/C d/D d/A a/EOS
+b/D d/A c/D c/C d/C a/D d/EOS
+c/B c/B b/C b/EOS
+c/A a/D c/C a/B c/C b/A c/C d/A a/EOS
+d/A a/D d/C a/D d/A c/D d/A a/EOS
+b/A d/B a/C c/A b/B a/C c/A b/D a/EOS
+d/D b/B c/D d/D d/D d/C b/B d/EOS
+b/D b/A a/C a/B a/A b/A c/A a/B d/EOS
+d/C d/D b/B d/D c/EOS
+b/D a/D c/A c/B b/C a/C d/A d/EOS
+a/D a/D d/A d/EOS
+a/A b/A a/D a/A d/D d/D a/A d/A a/B a/EOS
+c/B c/A a/C c/C b/B b/B b/B c/C c/A a/C b/EOS
+b/D b/A b/B a/B d/EOS
+d/B b/C a/A c/C c/C a/A c/B b/EOS
+a/D a/B a/A b/A d/EOS
+d/B b/B b/A d/B a/A b/D a/B b/B b/EOS
+c/A b/B b/B b/B a/EOS
+d/A c/B c/B a/C a/A c/A b/C b/C a/EOS
+c/B c/B b/C b/B c/B b/C b/EOS
+d/A a/C b/A d/D d/D d/B b/D d/D d/D a/B c/A a/EOS
+c/D b/C a/A b/B a/A c/B d/EOS
+d/D a/A a/C c/A a/A d/EOS
+c/C d/A c/C b/C c/B c/C a/D c/EOS
+b/D d/B a/A a/A b/D d/EOS
+b/D b/A b/B a/B d/EOS
+d/D b/D c/A a/D d/A a/C d/B d/EOS
+d/C c/B c/C b/D d/B c/C b/C c/EOS
+b/C a/D a/A d/A c/EOS
+b/D d/B a/D d/B b/B b/D d/A b/D d/EOS
+d/C a/B c/B d/A b/A c/A a/C a/B a/D b/C b/A c/EOS
+a/C c/C c/A d/D d/D a/C c/C c/EOS
+c/D a/B b/D b/C a/A c/B d/B b/A d/EOS
+c/C a/A a/A a/B b/A a/A a/A c/EOS
+c/A a/A d/D a/A d/B c/C b/D a/A d/D a/A a/EOS
+b/C d/C d/D c/D c/EOS
+b/B c/C c/A c/D d/C a/C c/C b/EOS
+d/A b/B b/B b/B a/EOS
+c/A d/D d/B c/C b/D d/D a/EOS
+a/A b/C d/C d/D c/D c/B a/EOS
+a/B d/D d/C c/D d/D b/EOS
+b/C b/D a/A d/B c/EOS
+d/A c/D b/A a/B c/C c/C b/A a/B d/C a/EOS
+b/D b/A d/D a/B d/EOS
+d/C d/D b/A c/D d/A a/A a/D d/C a/B d/D c/EOS
+d/C d/D a/B c/C b/A d/D c/EOS
+c/B a/B a/B b/A b/A b/EOS
+d/D c/A a/D a/C c/A b/A a/B a/C c/A d/A a/C d/EOS
+b/A a/D d/A a/EOS
+d/B a/B a/C c/C c/A b/A b/EOS
+a/A d/C a/D d/A b/D d/B a/D d/A c/D a/EOS
+c/B d/C b/B b/B b/A a/A a/B b/B b/B c/D b/EOS
+a/C d/D d/D c/EOS
+b/A c/B c/C c/C b/C a/EOS
+b/D d/D d/C c/C a/A c/C c/D d/D d/EOS
+b/B c/B a/C c/B a/B c/A a/C b/A b/C c/A b/C b/EOS
+c/B d/A b/D d/B a/C d/A a/D c/A b/D d/B a/D b/EOS
+a/A a/B d/D b/A a/EOS
+b/A a/C d/A a/B b/A a/D c/A a/EOS
+b/A c/C a/D d/A c/C a/EOS
+a/A d/D a/B b/B d/B c/C b/D b/B b/A d/D a/EOS
+a/C a/B b/A c/A a/C c/A a/C a/B b/A c/EOS
+d/D d/B d/D b/D d/EOS
+c/B a/D a/A d/A b/EOS
+d/D d/A d/C a/C b/B c/A c/D a/D d/EOS
+a/D a/B d/A d/B d/D b/D a/D b/A d/EOS
+d/C b/D d/B c/EOS
+a/D d/D a/B b/B b/A d/D d/EOS
+b/C b/A c/D d/B b/D d/C a/B c/EOS
+a/D b/D c/D a/D d/A a/D d/A d/C d/B d/EOS
+c/C b/B d/C a/A c/D b/B c/EOS
+a/B b/B c/C b/B b/EOS
+b/B c/C d/D c/A d/C d/D c/D a/C d/D c/C b/EOS
+c/A b/D d/A d/D a/D d/B a/EOS
+d/D d/C d/C b/B c/D c/D d/EOS
+a/A b/D b/A b/C d/D c/B a/B d/B a/EOS
+d/A b/A a/B d/A c/D b/A a/B d/C a/D b/A a/B a/EOS
+b/A b/C d/D c/B a/EOS
+b/D d/D c/D b/A d/C c/C c/D a/B d/C d/D d/EOS
+b/D d/D a/A d/D d/EOS
+a/A a/D d/B a/B a/A b/A b/D d/A a/EOS
+c/B c/D d/D c/C d/D d/C b/EOS
+b/B a/C d/A d/C a/D d/A c/D a/D c/A b/EOS
+c/C d/C a/A d/B b/D a/A c/D c/EOS
+a/C c/D a/C a/A c/A d/C c/EOS
+c/D b/A b/B c/D c/B d/A a/D b/C d/C b/B a/B d/EOS
+d/D d/C c/A a/B a/B b/A b/A a/C c/D d/EOS
+d/D d/D d/C d/C c/C b/B c/C c/D c/D d/D d/EOS
+a/B b/D d/B b/EOS
+b/D d/C c/C d/B a/A d/B b/D a/A b/D c/C c/D d/EOS
+b/D c/C c/D a/C c/C c/A d/C c/C d/EOS
+d/B a/A b/D b/D b/B d/B d/B a/A b/EOS
+a/D b/B d/B b/D b/B d/EOS
+d/A b/C c/B a/EOS
+a/C d/A b/C b/D c/C d/C c/D c/C d/B c/B a/D c/EOS
+c/A d/C b/D b/A c/C a/B d/B c/D a/EOS
+b/C c/A a/C c/EOS
+d/D c/B b/B b/B a/B c/D d/C b/A b/B b/B b/C d/EOS
+d/A c/C c/C a/EOS
+b/B c/A d/B d/D b/D a/C b/EOS
+b/C b/D d/B c/EOS
+d/A d/C d/A c/A a/C a/D c/D a/EOS
+b/D d/B a/B a/A b/B a/A b/A b/D d/EOS
+a/A b/B b/D b/C b/B d/C c/D b/B c/B d/B b/B a/EOS
+d/A b/C b/C a/B b/A c/B c/B a/EOS
+c/A b/D b/A c/A a/C a/B d/B a/EOS
+b/B d/A a/A b/C d/A d/D a/D c/B a/A a/D b/EOS
+b/B c/B b/C b/EOS
+c/D c/B c/D d/B b/D d/C b/C d/EOS
+c/B a/C a/A c/A b/EOS
+a/D b/A c/C a/C b/A a/B c/A c/C a/B d/EOS
+d/D b/B d/D b/D c/D a/A a/A d/C d/B d/D b/B d/EOS
+d/B d/D b/D a/C c/A d/B d/D b/EOS
+c/C c/C a/C a/A a/D b/D d/B d/A a/A c/A c/C c/EOS
+b/A a/C b/C b/B a/A c/B b/C a/A b/B c/B c/A a/EOS
+a/D a/A d/A b/A a/B a/D a/A d/EOS
+d/A d/C b/C a/A a/A c/B c/D a/EOS
+c/B a/B d/D d/A a/D d/D b/A b/EOS
+a/B d/D a/C d/B b/D c/A d/D b/EOS
+d/A c/B d/A a/B d/A a/D b/A a/D b/C a/EOS
+a/A a/B d/C d/D d/D c/D b/A a/EOS
+b/B b/C a/B b/A c/B b/EOS
+c/D b/D b/B d/B d/EOS
+c/C d/C c/D c/EOS
+b/A d/A c/B b/B b/C a/D a/EOS
+c/C c/C c/C c/EOS
+b/C d/C b/B c/D c/EOS
+b/D b/B d/D b/B d/EOS
+c/A c/A b/B d/A b/A a/B a/D b/B a/C a/EOS
+b/A a/B d/D a/B b/D d/B b/A d/D b/A a/EOS
+a/C d/B d/D d/A a/D d/D b/D c/EOS
+c/C d/A a/B c/C c/B b/C c/C b/A a/D c/EOS
+b/B d/A a/A a/A a/D b/EOS
+a/A a/B b/C d/B b/D c/B b/A a/EOS
+b/D c/D d/C d/EOS
+a/A c/A a/C a/EOS
+d/B a/A a/B d/A b/C d/A a/D c/B a/D b/A a/A b/EOS
+d/C d/B a/B b/A b/D c/EOS
+c/B c/A c/A a/B b/A a/C a/C b/EOS
+a/A b/A c/B c/C b/C a/B a/EOS
+d/D c/D b/B c/C b/C d/D c/B c/C b/B d/C d/EOS
+d/D b/B a/A a/A b/B d/EOS
+c/B a/B d/D d/D b/A b/EOS
+a/A b/B a/B b/A b/B a/EOS
+b/D c/C c/D d/C a/A c/D d/C c/C d/EOS
+a/C a/D a/B d/A a/D b/A d/A c/EOS
+d/D d/A a/A d/C c/D a/A a/D d/EOS
+b/D d/D b/C d/D b/C a/D d/A c/B d/D c/B d/D d/EOS
+a/A c/A a/A a/C a/EOS
+b/C a/B d/D c/D d/C d/D b/A c/EOS
+a/A b/C b/C d/D c/B c/B a/EOS
+a/D d/B c/D b/D b/A b/C c/B a/B d/B d/C b/D d/EOS
+c/C c/D a/C a/D d/D d/A c/A d/C c/EOS
+c/D b/B a/D d/A c/D d/C a/D d/A b/B d/EOS
+b/C c/B c/A a/C b/C c/EOS
+a/B b/A a/B b/EOS
+b/D a/C b/B b/B c/A d/EOS
+b/C c/A c/A c/B b/C a/C a/C c/EOS
+a/D b/C b/A c/B b/B b/C a/B c/B d/EOS
+d/D c/C b/C c/B c/C d/EOS
+a/B a/C c/D d/C c/A b/EOS
+d/C b/A d/C d/B a/D d/D d/A b/D c/D a/B c/EOS
+d/B d/D b/C b/B a/D b/D d/B d/A b/B c/B d/D b/EOS
+a/B a/A a/B a/C b/D d/B c/A b/A a/A b/EOS
+d/B b/B d/D b/B b/D a/A a/A d/B b/B d/D b/B b/EOS
+c/D a/A d/B b/D a/A d/EOS
+b/A b/C c/C d/D b/A a/B d/D c/C c/B a/EOS
+b/D b/C a/B b/D b/D b/A a/B d/B d/B b/A c/B d/EOS
+d/B d/C d/A d/C d/D c/D a/D c/D b/EOS
+a/B b/C a/A d/A a/D b/A a/B d/A a/D a/A c/B b/EOS
+d/C a/D a/A b/B a/A d/A c/EOS
+a/C d/B c/D d/A b/C d/A a/D c/B a/D d/C b/D c/EOS
+b/A b/B b/D d/A c/C a/A c/C a/D d/B b/B a/EOS
+b/D c/A d/B b/D a/C d/EOS
+c/A a/B a/B c/C b/A b/A a/EOS
+b/A b/B c/D b/D d/A a/D d/B d/C b/B a/EOS
+d/B b/A a/A a/B b/EOS
+d/D a/B d/B d/D b/C a/A a/A c/B d/D b/D b/A d/EOS
+a/C d/A c/C a/C c/A b/A a/B a/C c/A c/C a/D c/EOS
+a/C a/B c/B a/A b/C b/A c/EOS
+a/D a/D b/B a/A b/B d/A d/EOS
+d/B c/B c/C b/C b/EOS
+a/D c/C d/D c/C d/D c/C d/EOS
+a/A a/C a/B d/A b/B b/B b/B a/D b/A c/A a/EOS
+c/D a/C c/D a/A a/B a/A b/A a/A d/C c/A d/EOS
+a/A c/C c/A a/C a/A a/A c/A a/C c/C a/EOS
+c/C a/A a/C c/A a/A c/EOS
+a/B b/B c/A a/C b/B b/EOS
+d/B d/A d/D a/D b/EOS
+b/C b/A a/B a/A a/B b/A a/A b/A a/B c/EOS
+d/D c/A b/D a/A d/B a/C d/EOS
+d/B c/B c/C d/B d/D c/C d/D b/D c/C b/C b/EOS
+d/C d/C c/D c/C d/C c/D c/EOS
+b/C c/C d/D c/C c/EOS
+c/A d/C d/A a/D c/D a/EOS
+a/A d/D c/C a/B a/C c/A b/A c/C d/D a/EOS
+b/D d/C a/C d/D c/A c/D d/EOS
+a/C b/C c/C c/C c/B c/EOS
+c/C d/C a/B c/C b/D b/C c/B d/B c/C b/A c/D c/EOS
+a/A b/D b/A a/C d/A b/B a/D c/A a/B d/B a/EOS
+c/D d/A d/D d/D a/D d/EOS
+c/D b/B b/A c/B b/C c/B b/C a/B b/B d/EOS
+a/B c/C a/B a/B d/D b/A b/A c/C b/EOS
+b/A d/D d/C a/D d/D d/A c/D d/D a/EOS
+d/B c/B a/D c/B b/C d/A b/C b/EOS
+d/D c/A d/C d/C b/D d/D d/B c/D c/D a/C d/EOS
+a/A d/D a/C d/D d/D d/D d/D c/A d/D a/EOS
+a/B b/A b/B d/B b/B b/D b/B a/B b/EOS
+b/D c/A d/B a/A b/B b/B a/A b/D a/C d/EOS
+d/B d/B d/C c/D b/D b/EOS
+b/D c/C c/B b/D d/B b/D d/B b/C c/C d/EOS
+d/C a/B a/C c/B b/B d/D d/D b/B b/C c/A b/A c/EOS
+c/A d/B b/A d/B d/D d/D b/D a/B b/D a/EOS
+c/C a/D d/C b/C d/C b/B c/D c/B c/D d/A c/EOS
+d/A b/C c/B a/EOS
+b/D b/D d/B d/EOS
+d/D c/C a/D c/A a/B d/D b/A a/C d/A c/C d/EOS
+c/C d/B b/B b/D c/EOS
+b/D d/D d/A a/D d/D d/EOS
+a/A d/C d/C d/B d/D b/D c/D c/D a/EOS
+d/B c/B c/B d/B b/A c/A a/C a/B b/D b/C b/C b/EOS
+c/A a/A a/C a/A b/D c/B b/C d/B a/A c/A a/A a/EOS
+a/A a/A c/B a/C c/A b/C a/A a/EOS
+a/A a/A b/C a/B b/A c/B a/A a/EOS
+d/A b/C c/B a/C c/A b/C c/B a/EOS
+d/D a/A d/C c/D a/A d/EOS
+b/A c/A a/B b/D a/A d/B b/A a/C a/EOS
+c/D a/A b/B b/B a/A d/EOS
+b/B d/D c/D a/B b/C c/B b/A d/C d/D b/EOS
+d/D d/A d/B a/C b/B c/A b/D a/D d/EOS
+d/A b/A c/D c/C d/C a/B a/EOS
+b/B c/D c/B c/B a/C c/A b/C b/C d/C b/EOS
+c/B b/B a/A c/D a/A d/C a/A b/B b/EOS
+a/D d/B b/D d/EOS
+a/C a/C b/A c/A a/B b/A a/C a/B c/A c/EOS
+c/D d/B d/A d/D a/D b/D d/EOS
+b/B c/D d/C b/EOS
+c/C d/B b/D d/B b/D c/EOS
+d/D d/D b/B d/D d/EOS
+a/D d/A c/A c/C c/A d/D a/C c/C a/C a/D d/EOS
+b/D a/C d/A b/C a/D d/A c/B a/D c/A d/EOS
+c/B d/D c/C d/D b/EOS
+c/D c/C b/A b/D a/C b/B c/A d/B a/B c/C d/EOS
+a/A c/C b/B c/C a/EOS
+c/D c/B a/A a/C a/B b/B b/A c/A a/A b/C d/EOS
+b/B a/A c/A b/C a/A c/B a/C a/A b/EOS
+c/C c/A c/B c/A a/D d/A a/C b/C a/C c/EOS
+d/A d/A b/C d/A d/A a/D a/D c/B a/D a/EOS
+b/A c/B c/D d/C b/B b/B c/D d/C b/C a/EOS
+a/D d/A b/B b/D a/C c/A d/B b/B a/D d/EOS
+d/D d/C a/C c/A b/B a/C c/A c/D d/EOS
+b/A d/A b/D d/B a/D a/EOS
+d/A d/D a/A d/D a/EOS
+b/A a/D a/D d/A d/A a/EOS
+c/B c/D b/A a/B d/C b/EOS
+b/C c/B a/D d/A b/C c/EOS
+a/D a/D a/B b/A d/A d/EOS
+b/B d/C d/D d/D b/B b/B d/D d/D c/D b/EOS
+c/C b/B d/D b/B b/B d/D b/B c/EOS
+b/C a/B d/B b/D b/A c/EOS
+a/A c/C c/C b/B b/D d/B b/B c/C c/C a/EOS
+a/A d/C c/D c/B d/D d/D d/D b/C d/C c/D a/EOS
+d/C a/A d/D d/B c/B c/A a/C b/C b/D d/D a/A c/EOS
+a/B a/A c/A c/A c/C c/C c/C c/C a/C a/C a/A b/EOS
+d/B a/D d/A b/D c/C d/B a/D d/A b/EOS
+a/B c/B a/D d/D d/D d/A b/C b/EOS
+b/C d/C a/B a/D c/C c/C c/C d/A b/A c/D c/EOS
+b/B c/D d/D d/C b/EOS
+a/B a/B c/C b/A b/EOS
+c/D c/B c/B a/D a/A a/A d/A b/C b/C d/EOS
+d/C a/B b/A c/EOS
+c/B b/C d/D c/B d/D c/C d/D b/C d/D c/B b/EOS
+a/D a/A b/B b/B b/B a/A d/EOS
+d/C b/D a/B b/A d/D d/D a/B b/A d/B c/EOS
+d/D b/D a/D d/D d/A d/B d/EOS
+a/A c/C b/D d/D d/B c/C a/EOS
+c/A c/C a/A c/D a/C c/A d/C a/A c/C a/EOS
+d/D d/C a/C c/A a/A a/A a/C c/A c/D d/EOS
+c/B d/B b/C a/A d/D a/A c/B b/D b/EOS
+a/A d/D a/B c/A a/C b/A d/D a/EOS
+a/B a/C d/A a/B a/D a/A d/A b/A a/D c/A b/EOS
+b/D d/D b/C c/C c/B d/D d/EOS
+c/A d/B d/B a/D b/C c/A a/C c/B d/A b/D b/D a/EOS
+d/A a/C b/D a/A d/B c/A a/EOS
+d/B a/D d/A b/EOS
+d/A a/A b/B d/D b/B a/A a/EOS
+b/A c/A a/A d/A c/C a/D a/A a/C a/EOS
+a/B b/D d/C a/C d/D c/A c/D d/B b/EOS
+c/D b/D d/B d/EOS
+c/B b/C a/C d/D c/A c/B b/EOS
+d/D a/B a/A a/D d/B d/C c/D b/D d/A a/A b/A d/EOS
+a/C b/D d/B c/EOS
+d/D c/A b/B a/C d/EOS
+d/D d/D a/A c/D d/B a/B b/A b/D d/C a/A d/D d/EOS
+c/A c/A d/C c/A a/B d/A a/D b/A a/C c/D a/C a/EOS
+a/B b/B a/A d/A a/A a/D a/A b/B b/EOS
+b/A c/A c/A d/B c/A a/C b/D a/C a/C a/EOS
+d/B a/A d/A b/D d/D d/D d/B a/D a/A b/EOS
+c/B d/D d/B b/B d/C a/A c/D b/B b/D d/D b/EOS
+a/B c/A b/D d/B a/C b/EOS
+c/C b/B a/B a/A b/A b/B c/EOS
+c/C b/B d/C d/B b/D c/D b/B c/EOS
+c/C c/A c/A b/C a/D c/C d/A c/B a/C a/C c/EOS
+d/C d/C d/D c/D c/EOS
+b/C b/D b/C a/C c/A c/B d/B c/EOS
+b/A a/C b/B b/B c/A a/EOS
+c/B d/D a/D d/A d/D b/EOS
+b/A b/A b/B b/A c/A a/C a/B b/B a/B a/EOS
+d/C b/A a/B c/B b/C b/A a/B c/EOS
+d/C d/C b/B c/D c/EOS
+c/D d/D d/D d/EOS
+d/C a/D c/A c/C c/C a/C d/A c/EOS
+c/B a/B b/D a/A d/B b/A b/EOS
+d/D a/D a/D c/D b/D d/B d/C d/A d/A d/EOS
+b/C d/B b/D c/EOS
+a/D b/D b/D b/B b/A c/C a/B b/B d/B d/B d/EOS
+a/C d/D c/D c/B b/C d/C d/D c/EOS
+b/A c/B d/A b/B a/D b/C a/EOS
+c/A b/D c/A a/A a/A a/C d/B a/EOS
+c/C a/C b/C c/D a/A d/C c/B c/A c/EOS
+c/A a/C a/D a/A c/C d/D c/C a/A d/A c/A a/EOS
+d/A d/A b/D b/A a/A a/B d/B a/D a/EOS
+b/D c/D c/B c/C a/C d/A a/D c/A c/C b/C d/C d/EOS
+a/C d/C a/A c/B b/A a/B b/C a/A c/D c/EOS
+c/C d/A a/B d/D b/A a/D c/EOS
+c/B c/C c/A d/A c/B b/C a/D a/C c/C b/EOS
+c/C b/D c/D d/C d/B c/EOS
+a/C c/D c/C d/C c/EOS

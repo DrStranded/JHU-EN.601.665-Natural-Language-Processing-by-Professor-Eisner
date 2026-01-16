@@ -1,0 +1,22 @@
+Tagging accuracy: all: 1.837%, known: 1.809%, seen: 2.189%, novel: 2.114%
+Tagging accuracy: all: 73.481%, known: 74.301%, seen: 62.290%, novel: 66.050%
+Tagging accuracy: all: 81.235%, known: 82.812%, seen: 63.468%, novel: 65.456%
+Tagging accuracy: all: 79.820%, known: 81.246%, seen: 62.795%, novel: 65.918%
+Tagging accuracy: all: 83.966%, known: 85.665%, seen: 64.983%, novel: 66.909%
+Tagging accuracy: all: 85.239%, known: 87.175%, seen: 63.973%, novel: 65.654%
+Tagging accuracy: all: 85.824%, known: 87.940%, seen: 62.458%, novel: 64.465%
+Tagging accuracy: all: 85.636%, known: 87.807%, seen: 62.121%, novel: 63.540%
+Tagging accuracy: all: 86.563%, known: 88.595%, seen: 64.815%, novel: 65.786%
+Tagging accuracy: all: 86.630%, known: 88.650%, seen: 64.141%, novel: 66.314%
+Tagging accuracy: all: 86.576%, known: 88.696%, seen: 63.131%, novel: 65.192%
+Tagging accuracy: all: 87.958%, known: 90.188%, seen: 62.626%, novel: 65.720%
+Tagging accuracy: all: 88.342%, known: 90.532%, seen: 63.300%, novel: 66.579%
+Tagging accuracy: all: 87.607%, known: 89.717%, seen: 63.805%, novel: 66.513%
+Tagging accuracy: all: 88.108%, known: 90.330%, seen: 63.300%, novel: 65.786%
+Tagging accuracy: all: 88.714%, known: 91.026%, seen: 63.131%, novel: 65.390%
+Total training time: 0:03:19
+---
+Wrote tagging to results/crf_semi_lr0.05_reg1.0.output
+Tagging accuracy: all: 88.714%, known: 91.026%, seen: 63.131%, novel: 65.390%
+Cross-entropy: 0.3346 nats (= perplexity 1.397)
+===

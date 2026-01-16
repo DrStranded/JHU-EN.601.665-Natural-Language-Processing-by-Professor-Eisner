@@ -91,8 +91,32 @@ class ConditionalRandomFieldBackprop(ConditionalRandomField, nn.Module):
         # WA and WB will be ignored.  They don't affect the training objective
         # and you don't need to initialize them to -inf or anything else.)
 
-        raise NotImplementedError   # you fill this in!
-       
+        if not self.unigram and self.eos is not None:
+            with torch.no_grad():
+                self.WA.data[self.eos, :] = -999
+                if self.bos is not None:
+                    self.WA.data[self.eos, self.bos] = 0
+    
+        # Prevent transitions TO bos (except from eos)
+        if not self.unigram and self.bos is not None:
+            with torch.no_grad():
+                self.WA.data[:, self.bos] = -999
+                if self.eos is not None:
+                    self.WA.data[self.eos, self.bos] = 0
+        
+        # Handle special word emissions
+        if self.bos_w is not None:
+            with torch.no_grad():
+                self.WB.data[:, self.bos_w] = -999
+                if self.bos is not None:
+                    self.WB.data[self.bos, self.bos_w] = 0
+        
+        if self.eos_w is not None:
+            with torch.no_grad():
+                self.WB.data[:, self.eos_w] = -999
+                if self.eos is not None:
+                    self.WB.data[self.eos, self.eos_w] = 0   # you fill this in!
+        
         self.updateAB()  # update A and B potential matrices from new params
 
     def init_optimizer(self, lr: float, weight_decay: float) -> None:      
@@ -138,7 +162,8 @@ class ConditionalRandomFieldBackprop(ConditionalRandomField, nn.Module):
         # [docstring will be inherited from parent method]
 
         # Look up how to do this with a PyTorch optimizer!
-        raise NotImplementedError   # you fill this in!
+        """Zero out accumulated gradients before processing a new minibatch."""
+        self.optimizer.zero_grad()   # you fill this in!
 
     @override
     def accumulate_logprob_gradient(self, sentence: Sentence, corpus: TaggedCorpus) -> None:
@@ -156,7 +181,17 @@ class ConditionalRandomFieldBackprop(ConditionalRandomField, nn.Module):
         # Hint: You want to maximize the (regularized) log-probability. However,
         # PyTorch optimizers *minimize* functions by default.
         
-        raise NotImplementedError   # you fill this in!
+        """Accumulate gradient of log p(tags|words) for one sentence using backprop."""
+    
+        # Compute conditional log-probability
+        logprob = self.logprob(sentence, corpus)
+        
+        # We want to MAXIMIZE logprob, but optimizer MINIMIZES
+        # So minimize -logprob
+        loss = -logprob
+        
+        # Backpropagate: gradients accumulate in parameter.grad
+        loss.backward()   # you fill this in!
 
     @override
     def logprob_gradient_step(self, lr: float) -> None:
@@ -165,7 +200,8 @@ class ConditionalRandomFieldBackprop(ConditionalRandomField, nn.Module):
         # Look up how to do this with a PyTorch optimizer!
         # Basically, you want to take a step in the direction
         # of the accumulated gradient.
-        raise NotImplementedError   # you fill this in!
+        """Take a gradient step to increase log-probability."""
+        self.optimizer.step()   # you fill this in!
         
     @override
     def reg_gradient_step(self, lr: float, reg: float, frac: float):
@@ -173,7 +209,7 @@ class ConditionalRandomFieldBackprop(ConditionalRandomField, nn.Module):
 
         # Hint: We created an optimizer that already handles L2
         # regularization for us.        
-        raise NotImplementedError   # you fill this in!
+        pass   # you fill this in!
 
     def learning_speed(self, lr: float, minibatch_size: int) -> float:
         """Estimates how fast we are trying to learn, based on the gradient

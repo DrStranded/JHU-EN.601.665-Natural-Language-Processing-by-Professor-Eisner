@@ -1,0 +1,16 @@
+Cross-entropy: -0.0000 nats (= perplexity 1.000)
+Cross-entropy: -0.0000 nats (= perplexity 1.000)
+Total training time: 0:00:02
+---
+Wrote tagging to hash_crf_baseline_hashdev.output
+Cross-entropy: -0.0000 nats (= perplexity 1.000)
+Tagging accuracy: all: nan%, known: nan%, seen: nan%, novel: nan%
+===
+Cross-entropy: -0.0000 nats (= perplexity 1.000)
+Cross-entropy: -0.0000 nats (= perplexity 1.000)
+Total training time: 0:00:01
+---
+Wrote tagging to hash_crf_baseline_hashdev.output
+Cross-entropy: -0.0000 nats (= perplexity 1.000)
+Tagging accuracy: all: nan%, known: nan%, seen: nan%, novel: nan%
+===

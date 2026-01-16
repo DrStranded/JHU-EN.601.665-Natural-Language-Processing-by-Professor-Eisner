@@ -1,0 +1,13 @@
+Cross-entropy: 1.7298 nats (= perplexity 5.640)
+Cross-entropy: 1.0746 nats (= perplexity 2.929)
+Cross-entropy: 1.0666 nats (= perplexity 2.905)
+Cross-entropy: 1.0589 nats (= perplexity 2.883)
+Cross-entropy: 1.0499 nats (= perplexity 2.857)
+Cross-entropy: 1.0506 nats (= perplexity 2.859)
+Cross-entropy: 1.0478 nats (= perplexity 2.851)
+Total training time: 0:00:26
+---
+Wrote tagging to reverse_v3_neural_reversedev.output
+Cross-entropy: 1.0478 nats (= perplexity 2.851)
+Tagging accuracy: all: 41.782%, known: 41.782%, seen: nan%, novel: nan%
+===

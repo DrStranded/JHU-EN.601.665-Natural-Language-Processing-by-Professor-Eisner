@@ -1,0 +1,16 @@
+=== CRF Hyperparameter Results ===
+
+LR=0.01, REG=1.0:
+Tagging accuracy: all: 85.402%, known: 87.523%, seen: nan%, novel: 63.425%
+
+LR=0.05, REG=0.5:
+Tagging accuracy: all: 90.496%, known: 93.082%, seen: nan%, novel: 63.710%
+
+LR=0.05, REG=1.0:
+Tagging accuracy: all: 90.171%, known: 92.601%, seen: nan%, novel: 64.991%
+
+LR=0.05, REG=2.0:
+Tagging accuracy: all: 89.432%, known: 91.800%, seen: nan%, novel: 64.896%
+
+LR=0.1, REG=1.0:
+

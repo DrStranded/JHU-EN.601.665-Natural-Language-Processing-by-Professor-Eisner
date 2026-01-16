@@ -1,0 +1,17 @@
+Cross-entropy: 1.7827 nats (= perplexity 5.946)
+Cross-entropy: 1.4361 nats (= perplexity 4.204)
+Cross-entropy: 1.4093 nats (= perplexity 4.093)
+Cross-entropy: 1.1966 nats (= perplexity 3.309)
+Cross-entropy: 0.7638 nats (= perplexity 2.146)
+Cross-entropy: 0.4837 nats (= perplexity 1.622)
+Cross-entropy: 0.2925 nats (= perplexity 1.340)
+Cross-entropy: 0.1130 nats (= perplexity 1.120)
+Cross-entropy: 0.0321 nats (= perplexity 1.033)
+Cross-entropy: 0.0081 nats (= perplexity 1.008)
+Cross-entropy: 0.0033 nats (= perplexity 1.003)
+Total training time: 0:00:09
+---
+Wrote tagging to next_neural_nextdev.output
+Cross-entropy: 0.0033 nats (= perplexity 1.003)
+Tagging accuracy: all: 100.000%, known: 100.000%, seen: nan%, novel: nan%
+===

@@ -1,0 +1,17 @@
+Cross-entropy: 1.5266 nats (= perplexity 4.602)
+Cross-entropy: 0.9582 nats (= perplexity 2.607)
+Cross-entropy: 0.4599 nats (= perplexity 1.584)
+Cross-entropy: 0.2747 nats (= perplexity 1.316)
+Cross-entropy: 0.2426 nats (= perplexity 1.275)
+Cross-entropy: 0.2047 nats (= perplexity 1.227)
+Cross-entropy: 0.1712 nats (= perplexity 1.187)
+Cross-entropy: 0.0331 nats (= perplexity 1.034)
+Cross-entropy: 0.0000 nats (= perplexity 1.000)
+Cross-entropy: 0.0000 nats (= perplexity 1.000)
+Cross-entropy: 0.0000 nats (= perplexity 1.000)
+Total training time: 0:00:13
+---
+Wrote tagging to pos_test_posdev.output
+Cross-entropy: 0.0000 nats (= perplexity 1.000)
+Tagging accuracy: all: 100.000%, known: 100.000%, seen: nan%, novel: nan%
+===

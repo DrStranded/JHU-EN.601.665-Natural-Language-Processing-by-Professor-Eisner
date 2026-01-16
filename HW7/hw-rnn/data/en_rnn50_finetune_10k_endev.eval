@@ -1,0 +1,12 @@
+Cross-entropy: 3.1271 nats (= perplexity 22.807)
+Cross-entropy: 0.2007 nats (= perplexity 1.222)
+Cross-entropy: 0.1702 nats (= perplexity 1.186)
+Cross-entropy: 0.1759 nats (= perplexity 1.192)
+Cross-entropy: 0.1798 nats (= perplexity 1.197)
+Cross-entropy: 0.1914 nats (= perplexity 1.211)
+Total training time: 0:08:49
+---
+Wrote tagging to en_rnn50_finetune_10k_endev.output
+Cross-entropy: 0.1914 nats (= perplexity 1.211)
+Tagging accuracy: all: 93.962%, known: 95.934%, seen: 78.466%, novel: 69.464%
+===

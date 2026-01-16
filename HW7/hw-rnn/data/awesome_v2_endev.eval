@@ -1,0 +1,12 @@
+Cross-entropy: 3.1280 nats (= perplexity 22.827)
+Cross-entropy: 0.6745 nats (= perplexity 1.963)
+Cross-entropy: 0.2154 nats (= perplexity 1.240)
+Cross-entropy: 0.1855 nats (= perplexity 1.204)
+Cross-entropy: 0.1758 nats (= perplexity 1.192)
+Cross-entropy: 0.1684 nats (= perplexity 1.183)
+Total training time: 0:11:43
+---
+Wrote tagging to awesome_v2_endev.output
+Cross-entropy: 0.1684 nats (= perplexity 1.183)
+Tagging accuracy: all: 94.697%, known: 97.294%, seen: 72.689%, novel: 63.754%
+===

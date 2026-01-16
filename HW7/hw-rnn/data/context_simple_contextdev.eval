@@ -1,0 +1,17 @@
+Cross-entropy: 1.2618 nats (= perplexity 3.532)
+Cross-entropy: 1.2801 nats (= perplexity 3.597)
+Cross-entropy: 1.5517 nats (= perplexity 4.720)
+Cross-entropy: 1.6248 nats (= perplexity 5.077)
+Cross-entropy: 1.0882 nats (= perplexity 2.969)
+Cross-entropy: 1.2618 nats (= perplexity 3.532)
+Cross-entropy: 1.2801 nats (= perplexity 3.597)
+Cross-entropy: 1.5517 nats (= perplexity 4.720)
+Cross-entropy: 1.6248 nats (= perplexity 5.077)
+Cross-entropy: 1.0882 nats (= perplexity 2.969)
+Cross-entropy: 1.2038 nats (= perplexity 3.333)
+Total training time: 0:00:10
+---
+Wrote tagging to context_simple_contextdev.output
+Cross-entropy: 1.2038 nats (= perplexity 3.333)
+Tagging accuracy: all: 20.861%, known: 20.861%, seen: nan%, novel: nan%
+===

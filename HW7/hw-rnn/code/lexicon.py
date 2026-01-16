@@ -152,9 +152,71 @@ def problex_lexicon(corpus: TaggedCorpus) -> torch.Tensor:
     There is one feature for each tag t in corpus.tagset,
     with value log(p(t|w)).  Finally, there is a feature with
     value log(p(w)).  These probabilities are add-one-smoothing
-    estimates."""
+    estimates.
+    
+    Returns:
+        Tensor of shape [V, k+1] where:
+        - V = vocabulary size
+        - k = number of tags
+        - First k columns: log p(tag | word)
+        - Last column: log p(word)
+    """
+    V = len(corpus.vocab)
+    k = len(corpus.tagset)
+    
+    # ==================== STEP 1: Collect counts ====================
+    tw_counts = torch.zeros(k, V)  # [k, V]: count(tag, word)
+    w_counts = torch.zeros(V)       # [V]: count(word)
+    total_tokens = 0
+    
+    for sentence in corpus:
+        for word, tag in sentence:
+            # Skip special tokens
+            if word in [BOS_WORD, EOS_WORD]:
+                continue
+                
+            # Skip if no tag (unsupervised data)
+            if tag is None:
+                continue
+                
+            # Get integer indices - FIXED
+            w_idx = corpus.vocab.index(word)
+            t_idx = corpus.tagset.index(tag)
+            
+            if w_idx is not None and t_idx is not None:
+                # Accumulate counts
+                tw_counts[t_idx, w_idx] += 1
+                w_counts[w_idx] += 1
+                total_tokens += 1
+    
+    # ==================== STEP 2: Compute log p(t|w) ====================
+    
+    # p(t|w) = (count(t,w) + 1) / (count(w) + k)
+    # where count(w) = sum over all tags of count(t,w)
 
-    raise NotImplementedError   # you fill this in!
+    smoothed_tw_counts = tw_counts + 1.0  # [k, V]
+
+    # For each word, the denominator is count(w) + k
+    # count(w) is already computed correctly as sum of that word across all tags
+    denominators = w_counts + k  # [V]
+
+    # Broadcast denominator to [k, V] for division
+    p_t_given_w = smoothed_tw_counts / denominators.unsqueeze(0)  # [k, V] / [1, V]
+
+    # Take log and transpose to [V, k]
+    log_p_t_given_w = torch.log(p_t_given_w).T
+    
+    # ==================== STEP 3: Compute log p(w) ====================
+    smoothed_w_counts_1d = w_counts + 1
+    smoothed_total = total_tokens + V
+    
+    p_w = smoothed_w_counts_1d / smoothed_total
+    log_p_w = torch.log(p_w).unsqueeze(1)  # [V, 1]
+    
+    # ==================== STEP 4: Concatenate ====================
+    lexicon = torch.cat([log_p_t_given_w, log_p_w], dim=1)  # [V, k+1]
+    
+    return lexicon   # you fill this in!
 
 def affixes_lexicon(corpus: TaggedCorpus,
                     newvocab: Optional[Integerizer[Word]] = None) -> torch.Tensor:
@@ -166,6 +228,55 @@ def affixes_lexicon(corpus: TaggedCorpus,
     # If you implement this, you should add the words in newvocab
     # to corpus.vocab so that you can provide affix features for them.
 
-    raise NotImplementedError   # you fill this in!
+    """Return a feature matrix with binary features for common suffixes/prefixes.
+    
+    Features capture morphological patterns like:
+    - Ends with 'ing' (likely VERB)
+    - Ends with 'ed' (likely VERB) 
+    - Ends with 'ly' (likely ADV)
+    - Starts with capital letter (likely proper NOUN)
+    - Contains hyphen, digit, etc.
+    
+    Returns:
+        Tensor of shape [V, num_features] with binary (0/1) values
+    """
+    V = len(corpus.vocab)
+    
+    # Define affix patterns to check
+    suffixes = ['ing', 'ed', 'ly', 'tion', 'ness', 's', 'er', 'est', 'ful']
+    prefixes = ['un', 're', 'pre', 'dis']
+    
+    num_features = len(suffixes) + len(prefixes) + 3  # +3 for special features
+    features = torch.zeros(V, num_features)
+    
+    for w_idx in range(V):
+        word_str = str(corpus.vocab[w_idx])
+        
+        # Skip special tokens
+        if word_str in ['_BOS_WORD_', '_EOS_WORD_', '_OOV_']:
+            continue
+        
+        feature_idx = 0
+        
+        # Suffix features
+        for suffix in suffixes:
+            if word_str.endswith(suffix):
+                features[w_idx, feature_idx] = 1
+            feature_idx += 1
+        
+        # Prefix features
+        for prefix in prefixes:
+            if word_str.startswith(prefix):
+                features[w_idx, feature_idx] = 1
+            feature_idx += 1
+        
+        # Special features - FIXED
+        features[w_idx, feature_idx] = 1 if (len(word_str) > 0 and word_str[0].isupper()) else 0
+        feature_idx += 1
+        features[w_idx, feature_idx] = 1 if any(c.isdigit() for c in word_str) else 0
+        feature_idx += 1
+        features[w_idx, feature_idx] = 1 if '-' in word_str else 0  # Contains hyphen
+    
+    return features   # you fill this in!
 
 # Other feature templates could be added, such as word shape.

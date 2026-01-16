@@ -124,13 +124,22 @@ def parse_args() -> argparse.Namespace:
         default=False,
         help="neuralized model (HW7) with word embeddings based on probabilities in training data (may be combined with --lexicon)" 
     )
-
+    
     modelgroup.add_argument(
-        "-a",
-        "--awesome",
+        "-A",
+        "--affixes",
         action="store_true",
         default=False,
-        help="model should use extra improvements"
+        help="add binary affix features (suffixes/prefixes) to word embeddings"
+    )
+
+
+    modelgroup.add_argument(
+    "-a",
+    "--awesome",
+    action="store_true",
+    default=False,
+    help="model should use extra improvements"
     )
 
     #####
@@ -324,14 +333,25 @@ def main() -> None:
             if args.lexicon:
                 # The user gave us a file of pretrained lexical embeddings.
                 known_vocab = train_corpus.vocab   # save training vocab, since it may be replaced
+                
+                use_problex = args.problex or args.awesome  # if in awesome mode, we want problex features too
+                use_affixes = args.affixes or args.awesome  # if in awesome mode, we want affix features too
+                
                 lexicon = build_lexicon(train_corpus, 
-                                        embeddings_file=Path(args.lexicon) if args.lexicon else None, 
+                                        embeddings_file=Path(args.lexicon), 
                                         newvocab=TaggedCorpus(Path(args.input)).vocab,  # add only eval words from file
-                                        problex=args.problex)
+                                        problex=args.problex,
+                                        affixes=args.affixes)
             else:
                 # No lexicon was specified, so default to simpler embeddings of the training words.
-                if args.problex:
-                    lexicon = build_lexicon(train_corpus, problex=args.problex)
+                if args.problex or args.affixes or args.awesome:
+                    use_problex = args.problex or args.awesome  # if in awesome mode, we want problex features too
+                    use_affixes = args.affixes or args.awesome  # if in awesome mode, we want affix features too
+                    
+                    
+                    lexicon = build_lexicon(train_corpus, 
+                                            problex=use_problex,
+                                            affixes=use_affixes)
                 else:
                     # Simple one-hot embeddings are our final fallback if nothing else was specified.
                     lexicon = build_lexicon(train_corpus, one_hot=True)

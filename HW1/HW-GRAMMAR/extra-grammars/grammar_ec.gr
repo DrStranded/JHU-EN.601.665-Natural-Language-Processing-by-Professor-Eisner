@@ -1,0 +1,153 @@
+1	ROOT	S .
+1	ROOT	S !
+1	ROOT	is it true that S ?
+1	ROOT	it VerbPsych NP that S .
+1	ROOT	NP NegAux VP_base .
+1	ROOT	that S VerbPsych NP
+
+1	S	NP VP
+1	S	NP NegAux VP_base
+1	VP	VerbTran NP
+1	VP	VerbIntran
+1	VP	VerbBridge that S
+1	VP	VP PP
+1	VP	AdvVerb VerbTran NP
+1	VP	VerbTran NP AdvVerb
+10	NP	Det Noun
+1	NP	Det Adv Adj Noun
+
+1	NP	NounProper
+1	NP	NP PP
+1	NP	NP and NP
+1	PP	Prep NP
+10	Noun	Adj Noun
+0.3	Adv	Adv Adv
+1	VerbTran	VerbTran and VerbTran
+1	VerbInTran	VerbIntran and VerbIntran
+1	VerbIntran	VerbIntran PP
+
+1	Det	every
+1	Det	the
+
+1	VerbTran	ate
+1	VerbTran	wanted
+1	VerbTran	kissed
+1	VerbTran	understood
+1	VerbTran	pickled
+1	VerbIntran	sighed
+1	VerbIntran	worked
+1	VerbPsych	perplexed
+1	VerbPsych	amazed
+1	VerbBridge	thought
+1	VerbBridge	claimed
+
+#add 'a' or 'an', set two categories DetA and DetAn
+#And they should be set before words which sart with consonant ot vowel shouds
+#it is also important to distinguish the different type of the words, noun and adj should be categorized into those that start with vowel sounds and consoant sounds.
+1	DetA	a
+1	DetAn	an
+
+#add words which start with vowel or consonant sounds
+#vowel sounds:
+#1	Noun	apple
+#1	Noun	orange
+#1	Noun	egg
+#1	Adj	ambivalent
+#1	Adj	old
+#1	Adj	unusual
+
+1	Noun	NounCons
+1	Noun	NounVowel
+3	Adj	AdjCons
+3	Adj	AdjVowel
+
+#consonant sounds(Noun):
+1	NounCons	president
+1	NounCons	sandwich
+1	NounCons	pickle
+1	NounCons	chief of staff
+1	NounCons	floor
+1	NounCons	proposal
+1	NounCons	desk
+
+#vowel sounds(Noun):
+1	NounVowel	apple
+1	NounVowel	orange
+1	NounVowel	egg
+
+#consonant sounds(Adj):
+1	AdjCons	fine
+1	AdjCons	delicious
+1	AdjCons	perplexed
+1	AdjCons	pickled
+
+#vowel sounds(Adj):
+1	AdjVowel	ambivalent
+1	AdjVowel	old
+1	AdjVowel	unusual
+
+#modify the NP rule to determiner the next word:
+10	NP	DetA AdjCons Noun
+10	NP	DetA NounCons
+10	NP	DetAn AdjVowel Noun
+10	NP	DetAn NounVowel
+
+10	NP	DetA Adv AdjCons Noun
+10	NP	DetAn Adv AdjVowel Noun
+
+# yes-no questions：
+#set auxiliary verbs for past and futur
+1	Aux	did
+1	Aux	will
+
+#set a new rule for questions : change the sequence between subject and auxiliary:
+1	ROOT	Aux NP VP ?
+
+#set new catgories: VerbBaseTran and VerbBaseIntran:
+1	VerbBaseTran	eat
+1	VerbBaseTran	want
+1	VerbBaseTran	kiss
+1	VerbBaseTran	understand
+1	VerbBaseTran	pickle
+1	VerbBaseTran	perplex
+1	VerbBaseTran	amaze
+1	VerbBaseTran	think
+1	VerbBaseTran	claim
+
+1	VerbBaseIntran	sigh
+1	VerbBaseIntran	work
+
+# define new rule for VerbBaseTran
+1	VP_base	VerbBaseTran NP
+1	VP_base	VerbBaseTran that S
+
+# define new rule for VerbBaseIntran
+1	VP_base	VerbBaseIntran
+
+#define a new rule which can be used by both kinds of VerbBase
+1	VP_base	VP_base PP
+
+#add "dose":
+1	Aux	does
+
+#modify the rule for Aux:
+10	ROOT	Aux NP VP_base ?
+1	Adv	very
+1	Prep	with
+1	Prep	on
+1	Prep	under
+1	Prep	in
+
+1	NounProper	Sally
+1	NounProper	Joey
+
+#Adverb for Verbs
+1	AdvVerb	quickly
+1	AdvVerb	slowly
+1	AdvVerb	carefully
+1	NounProper	Sally
+
+#Negative Aux
+1	NegAux	did not
+1	NegAux	does not
+1	NegAux	will not

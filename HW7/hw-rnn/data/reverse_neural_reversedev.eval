@@ -1,0 +1,20 @@
+Cross-entropy: 1.5925 nats (= perplexity 4.916)
+Cross-entropy: 1.2199 nats (= perplexity 3.387)
+Cross-entropy: 1.2081 nats (= perplexity 3.347)
+Cross-entropy: 1.1691 nats (= perplexity 3.219)
+Total training time: 0:00:13
+---
+Wrote tagging to reverse_neural_reversedev.output
+Cross-entropy: 1.1691 nats (= perplexity 3.219)
+Tagging accuracy: all: 38.269%, known: 38.269%, seen: nan%, novel: nan%
+===
+Cross-entropy: 1.5914 nats (= perplexity 4.910)
+Cross-entropy: 1.2289 nats (= perplexity 3.418)
+Cross-entropy: 1.2098 nats (= perplexity 3.353)
+Cross-entropy: 1.2016 nats (= perplexity 3.325)
+Total training time: 0:00:13
+---
+Wrote tagging to reverse_neural_reversedev.output
+Cross-entropy: 1.2016 nats (= perplexity 3.325)
+Tagging accuracy: all: 33.752%, known: 33.752%, seen: nan%, novel: nan%
+===

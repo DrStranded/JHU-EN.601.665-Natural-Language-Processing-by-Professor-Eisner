@@ -1,0 +1,252 @@
+question 2.d
+
+python tag.py ../data/endev \
+    --train ../data/ensup \
+    --model models/hmm_sup_only.pkl \
+    --eval_file results/hmm_sup_only.eval \
+    --output_file results/hmm_sup_only.output \
+    --max_steps 40000 \
+    --loss viterbi_error
+
+python tag.py ../data/endev \
+    --train ../data/ensup ../data/enraw \
+    --model models/hmm_semisup.pkl \
+    --eval_file results/hmm_semisup.eval \
+    --output_file results/hmm_semisup.output \
+    --max_steps 82000 \
+    --loss viterbi_error \
+    --tolerance 1e-3
+
+
+2e.
+python tag.py ../data/endev \
+    --train ../data/ensup ../data/enraw \
+    --model models/hmm_semisup_earlystop.pkl \
+    --eval_file results/hmm_semisup.eval \
+    --output_file results/hmm_semisup.output \
+    --max_steps 81000 \
+    --loss viterbi_error \
+    --tolerance 1e-3
+
+# 模型1：supervised only
+python tag.py ../data/endev -m models/hmm_sup_only.pkl -o results/2e_sup_only.output
+
+# 模型2：semi-supervised (iteration 1)
+python tag.py ../data/endev -m models/hmm_semisup_earlystop.pkl -o results/2e_semisup_es.output
+
+# 比较差异（看哪些词标注不同）
+diff results/2e_sup_only.output results/2e_semisup_es.output > results/2e_tagging_es_diff.txt
+
+# 或者用side-by-side比较
+diff -y results/sup_only.output results/semisup_iter1.output | grep '|' > results/2e_differences.txt
+
+# 或者只看改变的行号
+diff --unchanged-line-format="" --old-line-format="SUP: %L" --new-line-format="SEMI: %L" \
+     results/sup_only.output results/semisup_iter1.output > results/2e_changes.txt
+
+
+
+
+2g.uni sup
+python tag.py ../data/endev \
+    --train ../data/ensup \
+    --model models/hmm_sup_only_uni.pkl \
+    --eval_file results/hmm_sup_only_uni.eval \
+    --output_file results/hmm_sup_only_uni.output \
+    --max_steps 1 \
+    --unigram \
+    --loss viterbi_error
+
+    python tag.py ../data/endev \
+    --train ../data/ensup ../data/enraw \
+    --model models/hmm_semi_uni.pkl \
+    --eval_file results/hmm_semi_uni.eval \
+    --output_file results/hmm_semi_uni.output \
+    --max_steps 1 \
+    --unigram \
+    --loss viterbi_error
+
+
+
+    
+    2h.raw_only
+python tag.py ../data/endev \
+    --train ../data/enraw \
+    --model models/hmm_raw_only.pkl \
+    --eval_file results/hmm_raw_only.eval \
+    --output_file results/hmm_raw_only.output \
+    --max_steps 40000 \
+    --loss viterbi_error
+
+    2h.semi same as above
+
+
+
+    2h.3ensup 1raw
+python tag.py ../data/endev \
+    --train ../data/ensup ../data/ensup ../data/ensup ../data/enraw \
+    --model models/hmm_3semisup.pkl \
+    --eval_file results/hmm_3semisup.eval \
+    --output_file results/hmm_3semisup.output \
+    --max_steps 60000 \
+    --loss viterbi_error \
+    --tolerance 1e-3
+
+
+
+
+
+
+
+
+4.a hyper (1)
+# ===== 4(a): 超参数搜索 =====
+# 测试不同learning rate和regularization组合
+
+# 1. Baseline
+python tag.py ../data/endev \
+    --train ../data/ensup \
+    --crf \
+    --model models/crf_lr0.05_reg1.0.pkl \
+    --eval_file results/crf_lr0.05_reg1.0.eval \
+    --output_file results/crf_lr0.05_reg1.0.output \
+    --lr 0.05 \
+    --reg 1.0 \
+    --batch_size 30 \
+    --eval_interval 2000 \
+    --max_steps 30000 \
+    --loss viterbi_error
+
+# 2. 更高learning rate
+python tag.py ../data/endev --train ../data/ensup --crf \
+    --model models/crf_lr0.1_reg1.0.pkl \
+    --eval_file results/crf_lr0.1_reg1.0.eval \
+    --output_file results/crf_lr0.1_reg1.0.output \
+    --lr 0.1 --reg 1.0 --batch_size 30 --eval_interval 2000 --max_steps 30000 --loss viterbi_error
+
+# 3. 更低learning rate
+python tag.py ../data/endev --train ../data/ensup --crf \
+    --model models/crf_lr0.01_reg1.0.pkl \
+    --eval_file results/crf_lr0.01_reg1.0.eval \
+    --output_file results/crf_lr0.01_reg1.0.output \
+    --lr 0.01 --reg 1.0 --batch_size 30 --eval_interval 2000 --max_steps 30000 --loss viterbi_error
+
+# 4. 更强regularization
+python tag.py ../data/endev --train ../data/ensup --crf \
+    --model models/crf_lr0.05_reg2.0.pkl \
+    --eval_file results/crf_lr0.05_reg2.0.eval \
+    --output_file results/crf_lr0.05_reg2.0.output \
+    --lr 0.05 --reg 2.0 --batch_size 30 --eval_interval 2000 --max_steps 30000 --loss viterbi_error
+
+# 5. 更弱regularization
+python tag.py ../data/endev --train ../data/ensup --crf \
+    --model models/crf_lr0.05_reg0.5.pkl \
+    --eval_file results/crf_lr0.05_reg0.5.eval \
+    --output_file results/crf_lr0.05_reg0.5.output \
+    --lr 0.05 --reg 0.5 --batch_size 30 --eval_interval 2000 --max_steps 30000 --loss viterbi_error
+
+echo "=== CRF Hyperparameter Results ===" > results/crf_hyperparams_summary.txt
+echo "" >> results/crf_hyperparams_summary.txt
+
+for f in results/crf_lr*.eval; do
+    name=$(basename $f .eval)
+    lr=$(echo $name | sed 's/crf_lr\([0-9.]*\)_reg.*/\1/')
+    reg=$(echo $name | sed 's/.*_reg\([0-9.]*\)/\1/')
+    echo "LR=$lr, REG=$reg:" >> results/crf_hyperparams_summary.txt
+    tail -3 $f | grep "Tagging accuracy" | tail -1 >> results/crf_hyperparams_summary.txt
+    echo "" >> results/crf_hyperparams_summary.txt
+done
+
+（2）
+# 4(b): CRF Semi-supervised 超参数搜索
+
+# 1. Baseline (lr=0.05, reg=1.0)
+python tag.py ../data/endev \
+    --train ../data/ensup ../data/enraw \
+    --crf \
+    --model models/crf_semi_lr0.05_reg1.0.pkl \
+    --eval_file results/crf_semi_lr0.05_reg1.0.eval \
+    --output_file results/crf_semi_lr0.05_reg1.0.output \
+    --lr 0.05 \
+    --reg 1.0 \
+    --batch_size 30 \
+    --eval_interval 2000 \
+    --max_steps 30000 \
+    --loss viterbi_error
+
+# 2. 更高learning rate
+python tag.py ../data/endev --train ../data/ensup ../data/enraw --crf \
+    --model models/crf_semi_lr0.1_reg1.0.pkl \
+    --eval_file results/crf_semi_lr0.1_reg1.0.eval \
+    --output_file results/crf_semi_lr0.1_reg1.0.output \
+    --lr 0.1 --reg 1.0 --batch_size 30 --eval_interval 2000 --max_steps 30000 --loss viterbi_error
+
+# 3. 更低learning rate
+python tag.py ../data/endev --train ../data/ensup ../data/enraw --crf \
+    --model models/crf_semi_lr0.01_reg1.0.pkl \
+    --eval_file results/crf_semi_lr0.01_reg1.0.eval \
+    --output_file results/crf_semi_lr0.01_reg1.0.output \
+    --lr 0.01 --reg 1.0 --batch_size 30 --eval_interval 2000 --max_steps 30000 --loss viterbi_error
+
+# 4. 更强regularization
+python tag.py ../data/endev --train ../data/ensup ../data/enraw --crf \
+    --model models/crf_semi_lr0.05_reg2.0.pkl \
+    --eval_file results/crf_semi_lr0.05_reg2.0.eval \
+    --output_file results/crf_semi_lr0.05_reg2.0.output \
+    --lr 0.05 --reg 2.0 --batch_size 30 --eval_interval 2000 --max_steps 30000 --loss viterbi_error
+
+# 5. 更弱regularization
+python tag.py ../data/endev --train ../data/ensup ../data/enraw --crf \
+    --model models/crf_semi_lr0.05_reg0.5.pkl \
+    --eval_file results/crf_semi_lr0.05_reg0.5.eval \
+    --output_file results/crf_semi_lr0.05_reg0.5.output \
+    --lr 0.05 --reg 0.5 --batch_size 30 --eval_interval 2000 --max_steps 30000 --loss viterbi_error
+
+# 汇总CRF Semi-supervised结果
+echo "=== CRF Semi-supervised Hyperparameter Results ===" > results/crf_semi_hyperparams_summary.txt
+echo "" >> results/crf_semi_hyperparams_summary.txt
+
+for f in results/crf_semi_lr*.eval; do
+    name=$(basename $f .eval)
+    lr=$(echo $name | sed 's/crf_semi_lr\([0-9.]*\)_reg.*/\1/')
+    reg=$(echo $name | sed 's/.*_reg\([0-9.]*\)/\1/')
+    echo "LR=$lr, REG=$reg:" >> results/crf_semi_hyperparams_summary.txt
+    tail -3 $f | grep "Tagging accuracy" | tail -1 >> results/crf_semi_hyperparams_summary.txt
+    echo "" >> results/crf_semi_hyperparams_summary.txt
+done
+
+# 查看结果
+cat results/crf_semi_hyperparams_summary.txt
+
+# 完整对比：Supervised vs Semi-supervised CRF
+echo "" >> results/crf_semi_hyperparams_summary.txt
+echo "=== Comparison: CRF Supervised vs Semi-supervised ===" >> results/crf_semi_hyperparams_summary.txt
+echo "" >> results/crf_semi_hyperparams_summary.txt
+echo "Best Supervised:" >> results/crf_semi_hyperparams_summary.txt
+tail -3 results/crf_lr0.05_reg1.0.eval | grep "Tagging accuracy" | tail -1 >> results/crf_semi_hyperparams_summary.txt
+echo "" >> results/crf_semi_hyperparams_summary.txt
+echo "Best Semi-supervised:" >> results/crf_semi_hyperparams_summary.txt
+# (手动选最好的结果填入)
+
+cat results/crf_semi_hyperparams_summary.txt
+
+4b.uni
+python tag.py ../data/endev \
+    --train ../data/ensup \
+    --crf \
+    --model models/crf_sup_only_uni.pkl \
+    --eval_file results/crf_sup_only_uni.eval \
+    --output_file results/crf_sup_only_uni.output \
+    --max_steps 40000 \
+    --unigram \
+    --lr 0.05 --reg 0.5 --batch_size 30 --eval_interval 2000 --max_steps 30000 --loss viterbi_error
+
+python tag.py ../data/endev \
+    --train ../data/ensup ../data/enraw\
+    --crf \
+    --model models/crf_semi_uni.pkl \
+    --eval_file results/crf_semi_uni.eval \
+    --output_file results/crf_semi_uni.output \
+    --max_steps 40000 \
+    --unigram \
+    --lr 0.05 --reg 0.5 --batch_size 30 --eval_interval 2000 --max_steps 30000 --loss viterbi_error
