@@ -1,0 +1,6 @@
+# Large data files
+*.pkl
+words-200.txt
+*.bin
+*.pt
+*.pth
